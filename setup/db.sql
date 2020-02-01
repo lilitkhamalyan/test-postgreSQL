@@ -1,7 +1,8 @@
 -- create schema
 drop schema if exists library cascade;
-create schema if not exists library;
+create schema library; 
 
+-- need this extension to generate uuid
 create extension if not exists "uuid-ossp" with schema library;
 
 -- create AUTHOR table
